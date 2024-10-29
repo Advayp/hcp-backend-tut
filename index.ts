@@ -10,13 +10,13 @@ async function main() {
 
   await prisma.user.create({
     data: {
-      email: "advaypatil27@gmail.com",
+      email: "apat23@uw.edu",
       name: "Advay",
       posts: {
-        create: { title: "Hello, World" },
+        create: { title: "Hello, UW" },
       },
       profile: {
-        create: { bio: "I like trees" },
+        create: { bio: "I like UW" },
       },
     },
   });
