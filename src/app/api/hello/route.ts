@@ -1,3 +1,4 @@
+import prisma from "@/lib/prisma";
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
@@ -15,7 +16,9 @@ export async function POST(
 ): Promise<NextResponse<ResponseData>> {
   const { info }: Partial<RequestData> = await request.json();
 
-  console.log(info);
+  const data = await prisma.user.findMany();
+
+  console.log(data);
 
   return NextResponse.json({ message: info! });
 }
