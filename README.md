@@ -20,7 +20,7 @@ Download _Postgres_ from [this link](https://www.postgresql.org/). Make sure to 
 2. Prisma requires a connection string to establish a link to our database. Use the following format to determine your connection string:
 
 ```python
-"postgresql://[username]:[password]@localhost:[port]/?schema=public"
+"postgresql://[username]:[password]@localhost:[port]/[db-name]?schema=public"
 ```
 
 3. Create a `.env` file in the root of the github repo with the following information, where `CONNECTION_STRING` is the formatted string from the previous part.
