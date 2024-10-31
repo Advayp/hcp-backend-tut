@@ -85,7 +85,7 @@ If needed, here's some more information about testing with Jest, NextJS, and Pri
 - [Testing with NextJS and Jest](https://nextjs.org/docs/pages/building-your-application/testing/jest)
 - [Specific Examples of Testing with Next, Prisma, and Jest](https://dev.to/dforrunner/unit-test-nextjs-13-app-router-api-routes-with-jest-and-react-testing-library-with-examples-including-prisma-example-367a)
 
-Make sure to put all your tests in files ending in `.test.ts`.
+Make sure to put all your tests in files ending in `.test.ts`. Also, each file header should have the `@jest-environment node` comment to ensure our tests are done in the appropriate context.
 
 ## Project Structure and Workflow
 
