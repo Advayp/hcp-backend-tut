@@ -10,7 +10,7 @@ First, clone the repo:
 
 Install all dependencies:
 
-2. `npm install`
+2. `npm install --legacy-peer-deps`
 
 ### Setting up Postgres
 
